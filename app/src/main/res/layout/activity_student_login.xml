@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentLoginActivity"
+    android:background="#FFFFFF"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/layout1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="216dp"
+                android:layout_height="134dp"
+                android:src="@drawable/b"
+                android:id="@+id/e"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:textSize="70sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20sp"
+                >
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColorHint="#DC1010"
+                    android:textColor="#DC1010"
+                    android:id="@+id/userName"
+                    android:hint="User Name or Email"
+                    android:drawableLeft="@drawable/profile"
+                    android:drawablePadding="20sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+
+                    app:met_baseColor="#DC1010"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#DC1010"
+                    app:met_singleLineEllipsis="true"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#DC1010"
+                    android:hint="Password"
+                    android:layout_marginTop="15sp"
+                    android:id="@+id/password"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="20sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textColorHint="#DC1010"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+
+                    app:met_baseColor="#DC1010"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#DC1010"
+                    app:met_singleLineEllipsis="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="20sp"
+                >
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:layout_weight="1"
+                    android:text="Login"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/signButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="Sign Up"
+                    android:layout_weight="1"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:linksClickable="true"
+                android:text="Fogot Password"
+                android:textColor="#DC1010"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/skip_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:text="SKIP"
+                android:layout_marginTop="90sp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
